@@ -1,121 +1,22 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-    <title>Hari Thakur | Official</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body{
-            margin:0;
-            font-family: Georgia, serif;
-            background:#0f0f0f;
-            color:#f5f5f5;
-        }
-        .container{
-            max-width:420px;
-            margin:auto;
-            padding:20px;
-            text-align:center;
-        }
-        .box{
-            background:#1c1c1c;
-            padding:20px;
-            border-radius:18px;
-            box-shadow:0 0 20px rgba(255,107,107,0.25);
-        }
-        img{
-            width:130px;
-            height:130px;
-            object-fit:cover;
-            border-radius:50%;
-            border:4px solid #ff6b6b;
-            margin-bottom:10px;
-        }
-        h2{
-            margin:10px 0 5px;
-        }
-        p{
-            color:#ccc;
-            font-size:14px;
-        }
-        a{
-            display:block;
-            padding:14px;
-            margin:12px 0;
-            border-radius:30px;
-            text-decoration:none;
-            font-weight:bold;
-            color:white;
-        }
-        .yt{
-            background:linear-gradient(45deg,#ff0000,#ff4d4d);
-        }
-        .fb{
-            background:linear-gradient(45deg,#1877f2,#42a5f5);
-        }
-        .ig{
-            background:linear-gradient(45deg,#f58529,#dd2a7b,#8134af);
-        }
-        .shayari-box{
-            background:#2a2a2a;
-            padding:15px;
-            margin-top:15px;
-            border-radius:12px;
-            font-style:italic;
-            color:#ffd6d6;
-            line-height:1.8;
-        }
-        button{
-            width:100%;
-            padding:14px;
-            margin-top:15px;
-            border:none;
-            border-radius:30px;
-            background:#ff6b6b;
-            color:white;
-            font-size:16px;
-            font-weight:bold;
-            cursor:pointer;
-        }
-        footer{
-            margin-top:18px;
-            font-size:12px;
-            color:#888;
-        }
-    </style>
-</head>
-<body>
-
-<div class="container">
-    <div class="box">
-        
-        <button onclick=">
-
-        <footer>
-            © 2025 | Shayari & Stories by Hari Thakur
-        </footer>
-
-    </div>
-</div>
-                
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hari Thakur | Cartoon Love Story</title>
+<title>Hari Thakur | Real Feel Cartoon</title>
 
 <style>
 :root{
-  --bg:#111;
-  --card:#1c1c1c;
-  --text:#fff;
+  --bg:#0f0f0f;
+  --box:#1c1c1c;
+  --text:#ffffff;
+  --sub:#cccccc;
 }
 .light{
-  --bg:#f4f4f4;
-  --card:#ffffff;
-  --text:#111;
+  --bg:#f2f2f2;
+  --box:#ffffff;
+  --text:#000000;
+  --sub:#555555;
 }
 
 body{
@@ -123,95 +24,177 @@ body{
   font-family:Arial, sans-serif;
   background:var(--bg);
   color:var(--text);
-  text-align:center;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+  transition:0.3s;
 }
 
 .container{
-  max-width:420px;
-  margin:auto;
-  padding:20px;
+  width:90%;
+  max-width:380px;
+  text-align:center;
 }
 
-.profile{
-  width:140px;
-  height:140px;
+.card{
+  background:var(--box);
+  padding:20px;
+  border-radius:20px;
+  box-shadow:0 0 20px rgba(0,0,0,0.2);
+}
+
+.profile img{
+  width:130px;
+  height:130px;
   border-radius:50%;
   border:4px solid #ff6b6b;
   object-fit:cover;
 }
 
-h1{margin:15px 0 5px}
-p{opacity:.8}
+h1{margin:12px 0 5px;}
+p{color:var(--sub);font-size:14px;}
 
 .btn{
   display:block;
-  margin:12px 0;
-  padding:16px;
-  border-radius:40px;
   text-decoration:none;
-  color:white;
-  font-size:18px;
+  padding:14px;
+  margin:12px 0;
+  border-radius:30px;
   font-weight:bold;
+  color:#fff;
 }
 
-.youtube{background:#ff0000}
-.facebook{background:#1877f2}
-.instagram{background:linear-gradient(45deg,#f58529,#dd2a7b,#8134af)}
-.whatsapp{background:#25D366}
+.youtube{background:#ff0000;}
+.facebook{background:#1877f2;}
+.instagram{background:linear-gradient(45deg,#f58529,#dd2a7b,#8134af);}
+.whatsapp{background:#25d366;}
+.share{background:#128c7e;}
 
-.card{
-  background:var(--card);
+.shayari-box{
+  background:#2a2a2a;
   padding:15px;
-  border-radius:15px;
-  margin-top:20px;
+  border-radius:12px;
+  margin-top:18px;
+  color:#ffd6d6;
+  font-size:15px;
+}
+
+iframe{
+  width:100%;
+  height:210px;
+  border-radius:12px;
+  margin-top:15px;
+  border:none;
 }
 
 .toggle{
-  position:fixed;
-  top:15px;
-  right:15px;
-  background:#ff6b6b;
-  color:white;
-  border:none;
-  padding:8px 14px;
-  border-radius:20px;
+  margin-bottom:12px;
   cursor:pointer;
+  font-size:14px;
 }
-iframe{border-radius:12px}
+
+footer{
+  margin-top:15px;
+  font-size:12px;
+  color:var(--sub);
+}
 </style>
 </head>
 
 <body>
-<button class="toggle" onclick="mode()">🌙 / ☀️</button>
 
 <div class="container">
-  <img src="profile.jpg" class="profile">
-  <h1>Hari Thakur</h1>
-  <p>Cartoon Love Story | Emotional Shorts</p>
+<div class="card">
 
-  <a class="btn youtube" href="https://youtube.com/@realfeelcartoon">▶ Subscribe on YouTube</a>
-  <a class="btn facebook" href="#">👍 Follow on Facebook</a>
-  <a class="btn instagram" href="#">📸 Follow on Instagram</a>
-  <a class="btn whatsapp" href="https://wa.me/919058962358">💬 Chat on WhatsApp</a>
+<div class="toggle" onclick="toggleMode()">🌗 Dark / Light Mode</div>
 
-  <!-- YouTube Shorts Preview -->
-  <div class="card">
-    <h3>Latest YouTube Short</h3>
-    <iframe width="100%" height="315"
-      src="https://www.youtube.com/embed/VIDEO_ID"
-      allowfullscreen>
-    </iframe>
-  </div>
+<div class="profile">
+  <img src="profile.jpg" alt="Hari Thakur">
+</div>
 
-  <div class="card">
-    <p>“कुछ मुलाक़ातें अधूरी रह जाती हैं,<br>पर यादें हमेशा ज़िंदा रहती हैं।”</p>
-  </div>
+<h1>Hari Thakur</h1>
+<p>Cartoon Love Story | Emotional Shorts</p>
+
+<a class="btn youtube" href="https://youtube.com/@realfeelcartoon?si=haSAZn8yaF6rCcaf" target="_blank">
+▶ Subscribe on YouTube
+</a>
+
+<a class="btn facebook" href="https://www.facebook.com/share/1DJyTu9JdW/?mibextid=wwXIfr" target="_blank">
+👍 Follow on Facebook
+</a>
+
+<a class="btn instagram" href="https://www.instagram.com/its_hari_thakur_?igsh=MWl0YzVrMDBycXJqag%3D%3D" target="_blank">
+📸 Follow on Instagram
+</a>
+
+<a class="btn whatsapp" href="https://wa.me/919058952358" target="_blank">
+💬 Chat on WhatsApp
+</a>
+
+<!-- YOUTUBE SHORTS AUTO PREVIEW -->
+<iframe 
+src="https://www.youtube.com/embed?listType=user_uploads&list=realfeelcartoon">
+</iframe>
+
+<!-- AUTO SHAYARI -->
+<div class="shayari-box" id="shayari"></div>
+
+<a class="btn share" id="shareBtn">
+📤 Share Shayari on WhatsApp
+</a>
+
+<div id="counter" style="margin-top:10px;font-size:13px;color:#aaa;">
+👁️ Visitors: 0
+</div>
+<footer>© 2025 | Real Feel Cartoon</footer>
+
+</div>
 </div>
 
 <script>
-function mode(){
-  document.body.classList.toggle("light");
+/* DARK LIGHT MODE */
+function toggleMode(){
+ document.body.classList.toggle("light");
 }
+
+/* AUTO SHAYARI */
+const shayariList=[
+"कुछ मुलाक़ातें अधूरी रह जाती हैं, पर यादें हमेशा ज़िंदा रहती हैं।",
+"हम खामोश रहे, और लोग समझ बैठे हमें दर्द नहीं।",
+"दिल आज भी उसी मोड़ पर खड़ा है, जहाँ तुम छोड़ गए थे।",
+"कुछ लोग कहानी बनकर नहीं, याद बनकर रह जाते हैं।",
+"मोहब्बत अधूरी रही, मगर इबादत पूरी थी।",
+"वक़्त ने सिखा दिया अकेले चलना, वरना हम भी साथ चाहते थे।"
+];
+
+let i=0;
+const shayariBox=document.getElementById("shayari");
+const shareBtn=document.getElementById("shareBtn");
+
+function changeShayari(){
+ shayariBox.innerText=shayariList[i];
+ i=(i+1)%shayariList.length;
+}
+setInterval(changeShayari,5000);
+changeShayari();
+
+/* SHARE */
+shareBtn.onclick=()=>{
+ window.open("https://wa.me/?text="+encodeURIComponent(shayariBox.innerText));
+};
+</script>
+<script>
+// Visitor Counter (Local)
+let visits = localStorage.getItem("visits");
+if(!visits){
+  visits = 1;
+}else{
+  visits = parseInt(visits) + 1;
+}
+localStorage.setItem("visits", visits);
+document.getElementById("counter").innerText =
+ "👁️ Visitors: " + visits;
 </script>
 </body>
 </html>
