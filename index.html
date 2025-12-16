@@ -138,3 +138,172 @@
 
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <title>Hari Thakur | Official</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body{
+            margin:0;
+            font-family: Georgia, serif;
+            background:#0f0f0f;
+            color:#f5f5f5;
+            transition:0.3s;
+        }
+        .container{
+            max-width:420px;
+            margin:auto;
+            padding:20px;
+            text-align:center;
+        }
+        .box{
+            background:#1c1c1c;
+            padding:20px;
+            border-radius:18px;
+            box-shadow:0 0 20px rgba(255,107,107,0.25);
+        }
+        img{
+            width:130px;
+            height:130px;
+            object-fit:cover;
+            border-radius:50%;
+            border:4px solid #ff6b6b;
+            margin-bottom:10px;
+        }
+        h2{
+            margin:10px 0 5px;
+        }
+        p{
+            color:#ccc;
+            font-size:14px;
+        }
+        a{
+            display:block;
+            padding:14px;
+            margin:12px 0;
+            border-radius:30px;
+            text-decoration:none;
+            font-weight:bold;
+            color:white;
+        }
+        .yt{background:linear-gradient(45deg,#ff0000,#ff4d4d);}
+        .fb{background:linear-gradient(45deg,#1877f2,#42a5f5);}
+        .ig{background:linear-gradient(45deg,#f58529,#dd2a7b,#8134af);}
+        .wa{background:linear-gradient(45deg,#25D366,#128C7E);}
+
+        .shayari-box{
+            background:#2a2a2a;
+            padding:15px;
+            margin-top:15px;
+            border-radius:12px;
+            font-style:italic;
+            color:#ffd6d6;
+            line-height:1.8;
+        }
+
+        button{
+            width:100%;
+            padding:14px;
+            margin-top:15px;
+            border:none;
+            border-radius:30px;
+            background:#ff6b6b;
+            color:white;
+            font-size:16px;
+            font-weight:bold;
+            cursor:pointer;
+        }
+
+        iframe{
+            border-radius:15px;
+            margin-top:15px;
+        }
+
+        footer{
+            margin-top:18px;
+            font-size:12px;
+            color:#888;
+        }
+
+        /* LIGHT MODE */
+        .light{
+            background:#ffffff;
+            color:#000000;
+        }
+        .light .box{background:#f2f2f2;}
+        .light p{color:#333;}
+        .light .shayari-box{background:#eaeaea;color:#111;}
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+<div class="box">
+
+    <!-- Profile -->
+    <img src="profile.jpg" alt="Hari Thakur">
+    <h2>Hari Thakur</h2>
+    <p>Cartoon Love Story | Emotional Shorts</p>
+
+    <!-- YouTube Shorts Auto Preview -->
+    <iframe width="100%" height="220"
+    src="https://www.youtube.com/embed?listType=user_uploads&list=realfeelcartoon"
+    frameborder="0" allowfullscreen></iframe>
+
+    <!-- Social Buttons -->
+    <a class="yt" href="https://youtube.com/@realfeelcartoon" target="_blank">
+        ▶ Subscribe on YouTube
+    </a>
+
+    <a class="fb" href="https://www.facebook.com/share/1DJyTu9JdW/" target="_blank">
+        👍 Follow on Facebook
+    </a>
+
+    <a class="ig" href="https://www.instagram.com/its_hari_thakur_" target="_blank">
+        📸 Follow on Instagram
+    </a>
+
+    <a class="wa" href="https://wa.me/919058952358" target="_blank">
+        💬 Chat on WhatsApp
+    </a>
+
+    <!-- Shayari -->
+    <div id="shayari" class="shayari-box"></div>
+
+    <button onclick="changeShayari()">नई शायरी पढ़ें ❤️</button>
+    <button onclick="toggleMode()">🌙 Dark / ☀️ Light</button>
+
+    <footer>
+        © 2025 | Shayari & Stories by Hari Thakur
+    </footer>
+
+</div>
+</div>
+
+<script>
+const shayariList=[
+"कुछ लोग कहानी बनकर नहीं,<br>याद बनकर रह जाते हैं।",
+"अधूरी कहानियों में ही,<br>सबसे गहरे एहसास होते हैं।",
+"वो चुप था इसलिए कहानी अधूरी रह गई।",
+"वक़्त ने अधूरा छोड़ा,<br>यादों ने पूरा किया।",
+"कुछ मुलाक़ातें अधूरी रह जाती हैं।"
+];
+
+function changeShayari(){
+    let i=Math.floor(Math.random()*shayariList.length);
+    document.getElementById("shayari").innerHTML=shayariList[i];
+}
+
+function toggleMode(){
+    document.body.classList.toggle("light");
+}
+
+changeShayari();
+</script>
+
+</body>
+</html>
