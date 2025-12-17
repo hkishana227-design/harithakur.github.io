@@ -225,6 +225,55 @@ footer{
   border-radius:18px;
   font-family: "Georgia", serif;
 }
+  <head>
+  <meta charset="UTF-8">
+  <title>Real Feel Cartoon</title>
+
+  <style>
+    .shayari-photo-card{
+      position:relative;
+      max-width:360px;
+      margin:25px auto;
+      border-radius:16px;
+      overflow:hidden;
+      box-shadow:0 10px 25px rgba(0,0,0,.4);
+    }
+
+    .shayari-photo-card img{
+      width:100%;
+      display:block;
+    }
+
+    .shayari-overlay{
+      position:absolute;
+      inset:0;
+      background:rgba(0,0,0,.55);
+      color:#fff;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:20px;
+      line-height:1.8;
+      font-size:17px;
+    }
+
+    .download-btn{
+      position:absolute;
+      bottom:12px;
+      right:12px;
+      background:#ff6b6b;
+      color:#fff;
+      padding:8px 14px;
+      border-radius:20px;
+      font-size:14px;
+      text-decoration:none;
+      font-weight:600;
+    }
+
+    .download-btn:hover{
+      background:#ff3b3b;
+    }
 </style>
 </head>
 
@@ -317,6 +366,22 @@ footer{
     फिर भी एक सवाल दिल में रह गया —<br>
     मैं यहाँ तक आख़िर क्यों आ गया ?
   </div>
+</div>
+
+  <div class="shayari-photo-card">
+  <img id="shayariImage" src="shayari-train.jpg" alt="Emotional Hindi Shayari Image">
+
+  <div class="shayari-overlay">
+    नशे भी किए, ज़हर भी आज़माया,<br>
+    हर रास्ता खुद से भागने का अपनाया,<br><br>
+    फिर भी एक सवाल दिल में रह गया —<br>
+    मैं यहाँ तक आख़िर क्यों आ गया ?
+  </div>
+
+  <!-- Download Button -->
+  <a href="shayari-train.jpg" download class="download-btn">
+    ⬇ Download Image
+  </a>
 </div>
   
 <footer>© 2025 | hari thaku Real Feel Cartoon</footer>
