@@ -66,6 +66,27 @@
       color:#888;
       margin-top:10px;
     }
+    .action-bar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:10px 14px;
+  margin-top:8px;
+  background:#1c1c1c;
+  border-radius:12px;
+  font-size:18px;
+}
+
+.action-bar span{
+  cursor:pointer;
+  opacity:0.85;
+  transition:0.2s;
+}
+
+.action-bar span:hover{
+  opacity:1;
+  transform:scale(1.15);
+}
   </style>
 </head>
 
@@ -95,6 +116,15 @@
     एक अधूरी कहानी छोड़कर।
   </div>
 
+  <div class="action-bar">
+  <span title="Copy">📋</span>
+  <span title="Listen">🔊</span>
+  <span title="Like">👍</span>
+  <span title="Dislike">👎</span>
+  <span title="Share">🔗</span>
+  <span title="More">⋯</span>
+</div>
+  
   <footer>© 2025 | Real Feel Cartoon</footer>
 
 </div>
