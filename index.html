@@ -375,15 +375,18 @@ footer{
 function toggleMode(){
  document.body.classList.toggle("light");
 }
-  
-/* SHARE */
+  <script>
+/* SHARE FIXED */
 const shayariBox = document.getElementById("shayari");
+const shareBtn = document.getElementById("shareBtn");
 
-shareBtn.onclick = () => {
-  window.open(
-    "https://wa.me/?text=" + encodeURIComponent(shayariBox.innerText)
-  );
-};
+if (shareBtn && shayariBox) {
+  shareBtn.onclick = () => {
+    window.open(
+      "https://wa.me/?text=" + encodeURIComponent(shayariBox.innerText)
+    );
+  };
+}
 </script>
   <script>
 function copyText(el){
